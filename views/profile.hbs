@@ -1,0 +1,98 @@
+<br/>
+<div class="row">
+  <div class="col-lg-6>
+    <div class="welcome-message">
+      <h4 style="color: white; margin-top: 35px;">Welcome {{ Uname }}!</h4>
+    </div>
+  </div>
+  <div class="col-lg-6>
+     
+  </div> 
+</div>   
+
+<hr/>
+ 
+
+<div class="well"> 
+<table class="table table-striped">
+   <thead>
+    <tr>
+      <th scope="col">Field</th>
+      <th scope="col">Content</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each student}}
+  		<tr>
+  			<td>First Name</td>
+  			<td>{{first_name}}</td>
+  		</tr>
+  		{{#if last_name}}
+  		<tr>
+  			<td>Last Name</td>
+  			<td>{{last_name}}</td>
+  		</tr>
+  		{{/if}}
+			<tr>
+  			<td>Course</td>
+  			<td>{{course}}</td>
+  		</tr>
+  		<tr>
+  			<td>College ID</td>
+  			<td>{{collegeID}}</td>
+  		</tr>
+  		<tr>
+  			<td>Tenth Score</td>
+  			<td>{{tenthMarks}}</td>
+  		</tr>
+  		<tr>
+  			<td>Twelvth Score</td>
+  			<td>{{twelvthMarks}}</td>
+  		</tr>
+      <tr>
+        <td>B.Tech. Score</td>
+        <td>{{btechMarks}}</td>
+      </tr>
+			<tr>
+        <td>Training Company</td>
+        <td>{{training_company}}</td>
+      </tr>
+			<tr>
+        <td>Training Location</td>
+        <td>{{training_location}}</td>
+      </tr>
+			<tr>
+        <td>Training Duration</td>
+        <td>{{training_duration}}</td>
+      </tr>
+			<tr>
+        <td>Native Place</td>
+        <td>{{native_place}}</td>
+      </tr>
+      <tr>
+        <td>Backlogs</td>
+        <td>{{backlogs}}</td>
+      </tr>
+				<tr>
+        <td>Email</td>
+        <td>{{email}}</td>
+      </tr>
+				<tr>
+        <td>Mobile No.</td>
+        <td>{{phone}}</td>
+      </tr>
+			</tr>
+				<tr>
+        <td>Date of Birth</td>
+        <td>{{dob}}</td>
+      </tr>
+  	{{/each}}		
+    </tbody>
+</table>
+</div>
+<hr/>
+</div>
+
+
+
+

@@ -1,0 +1,49 @@
+<header>
+
+    {{#if session.email}}
+
+		{{#ifEquals type "Student"}}
+
+
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+        <a class="navbar-brand" href="/"><img src="images/logo.png"></a>
+        <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dashboard">Profile</a></li>
+            <li></i><a href="/notices">Notices</a></li>
+            <li><a href="/logout">Logout</a></li>
+           
+        </ul>
+      </div>
+    </nav>  
+
+
+		{{/ifEquals}}
+		{{#ifEquals type "Admin"}}
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+        <a class="navbar-brand" href="/"><img src="images/logo.png"></a>
+        <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li></i><a href="/addStudent">Add Student</a></li>
+            <li><a href="/addNotice">Add Notice</a></li>
+            <li><a href="/logout">Logout</a></li>
+           
+        </ul>
+      </div>
+    </nav>				
+
+		{{/ifEquals}}
+    {{else}}
+    <nav class="navbar navbar-expand-lg navbar-inverse">
+    <a class="navbar-brand" href="/"><img src="images/logo.png"></a>
+    <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    {{/if}}  
+    </ul>
+  </div>
+</nav>	
+</header>
+
+
