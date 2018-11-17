@@ -61,7 +61,7 @@ $(document).ready(function(){
         var endyear = $('#endyear').val();
         var branch = $('#branch').val();
      
-        $.post("https://crc-master.herokuapp.com/dashboard",
+        $.post("https://sk-crc-app.herokuapp.com/dashboard",
             {
                 optionV : optionVal,
                 start : startyear,
@@ -108,7 +108,7 @@ $(document).ready(function(){
         data.push(cols);
     });
 
-             $.post("https://crc-master.herokuapp.com/exportFile",
+             $.post("https://sk-crc-app.herokuapp.com/exportFile",
                 {
                     fetchedData: data
                 },
